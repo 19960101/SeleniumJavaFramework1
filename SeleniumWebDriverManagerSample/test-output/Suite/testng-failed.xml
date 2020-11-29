@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browserName" value="Ie"/>
+  <test name="TestOnFirefox(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="demo.TestNGMultiBrowserDemo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- demo.TestNGMultiBrowserDemo -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed) -->
+  <test name="TestOnIE(failed)" parallel="tests">
+    <parameter name="browserName" value="Ie"/>
+    <classes>
+      <class name="demo.TestNGMultiBrowserDemo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- demo.TestNGMultiBrowserDemo -->
+    </classes>
+  </test> <!-- TestOnIE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
